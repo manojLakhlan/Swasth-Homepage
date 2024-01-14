@@ -18,14 +18,14 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
   color: black; /* Text color changed to black */
-  padding: 10px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav img {
-  height: 30px;
+  height: 40px;
   width: auto;
 }
 
@@ -298,7 +298,6 @@ footer {
 }
 
 .footer-section {
-  flex: 1;
   text-align: left;
   margin: 20px;
   justify-content: flex-start;
@@ -310,7 +309,10 @@ footer {
   margin-bottom: 10px;
 }
 
-
+.footer-part {
+  display: flex;
+  gap: 100px;
+}
 
 .quick-links a {
   margin-bottom: 20px;
@@ -346,7 +348,7 @@ footer {
   margin-top: 60px;
 }
 #toggleButton{
-visibility: hidden;
+display: none;
 }
 /* -----------------------Responsiveness------------------------------- */
 
@@ -384,6 +386,7 @@ visibility: hidden;
   display: none;
 }
 #toggleButton{
+  display: flex;
   visibility: visible;
   position: relative;
 }
