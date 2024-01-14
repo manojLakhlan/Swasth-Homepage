@@ -6,40 +6,54 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
   </head>
+
   <body>
     <nav>
       <div>
         <img src="Images/logo.png" alt="Logo" />
       </div>
-      <ul>
-        <li class="green-container">
-          HOME
-          <div class="greenDot"></div>
-        </li>
 
-        <li>ABOUT ▼</li>
-        <li>HCX</li>
-        <li>OTHER INITIATIVES ▼</li>
-        <li>HOW WE WORK</li>
-      </ul>
-      <div class="search-bar">
-        <input type="text" placeholder="Search" />
-        <div class="search-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#fff"
-            class="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-            />
-          </svg>
+      <div class="flex-search">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <div class="search-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#fff"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-      <button id="toggleButton">☰</button>
+      <div class="buttons">
+        <ul>
+          <li class="green-container box">
+            HOME
+            <div class="greenDot"></div>
+          </li>
+          <li class="box">ABOUT ▼</li>
+          <li class="box">HCX</li>
+          <li class="box">OTHER INITIATIVES ▼</li>
+          <li class="box">HOW WE WORK</li>
+        </ul>
+      </div>
+      <button id="toggleButton">
+        ☰
+        <ul class="toggle-list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Hcx</li>
+          <li>Other Initiatives</li>
+          <li>How we work</li>
+        </ul>
+      </button>
     </nav>
     <main>
       <section class="custom-section">
@@ -72,7 +86,7 @@
                 <h1>Vision</h1>
               </div>
               <div class="arrow">
-                <img src="Images/arrow.png" alt="">
+                <img src="Images/arrow.png" alt="" class="image-1" />
               </div>
             </div>
             <div class="card_2">
@@ -81,7 +95,7 @@
                 <h1>Mission</h1>
               </div>
               <div class="arrow">
-                <img src="Images/arrow.png" alt="">
+                <img src="Images/arrow.png" alt="" class="image-1" />
               </div>
             </div>
           </div>
@@ -90,25 +104,22 @@
         <article class="help">
           <div class="card">
             <div class="logo">
-              <img src="Images/donate.png" alt="">
+              <img src="Images/donate.png" alt="" />
             </div>
+            <p>Donate to Us</p>
+          </div>
+          <div class="card">
+            <div class="logo">Partner With Us</div>
             <p>
-              Donate to Us
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus dolores aut eaque.
             </p>
           </div>
           <div class="card">
             <div class="logo">
-              Partner With Us
+              <img src="Images/volunteer.png" alt="" />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores aut eaque.</p>
-          </div>
-          <div class="card">
-            <div class="logo">
-              <img src="Images/volunteer.png" alt="">
-            </div>
-            <p>
-              Volunteer With Us
-            </p>
+            <p>Volunteer With Us</p>
           </div>
         </article>
       </section>
@@ -116,45 +127,60 @@
       <!-- Add more sections or content here if needed -->
     </main>
 
-    <footer>
+    <footer class="footer-content">
       <div class="footer-logo footer-section">
-          <img src="https://i.ibb.co/bWhrsp7/vector-smart-object-2.png" alt="vector-smart-object-2" alt="Logo"> 
-          <div class="copyright-section">
-              <p>copyright@2022</p>
-          </div>
+        <img
+          src="https://i.ibb.co/bWhrsp7/vector-smart-object-2.png"
+          alt="vector-smart-object-2"
+          alt="Logo"
+        />
       </div>
-  
-      <div class="footer-section quick-links">
+      <div class="footer-part">
+        <div class="footer-section social-links">
+          <h2>Social Links</h2>
+          <a href="#" target="_blank">
+            <img
+              src="https://i.ibb.co/VjTR47y/vector-smart-object-6.png"
+              alt="Facebook"
+            />
+            <span>FACEBOOK</span>
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="https://i.ibb.co/gFfrQgR/vector-smart-object-7.png"
+              alt="Twitter "
+            />
+            <span>TWITTER</span>
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="https://i.ibb.co/gFfrQgR/vector-smart-object-7.png"
+              alt="linkdlin"
+            />
+            <span>LINKEDIN</span>
+          </a>
+        </div>
+        <div class="footer-section quick-links">
           <h2>Quick Links</h2>
           <a href="page1.html" target="_blank"> Get Involved</a>
           <a href="https://www.example.com" target="_blank"> Newscroom</a>
           <a href="page3.html" target="_blank"> Tech Blog</a>
+        </div>
       </div>
-  
-      <div class="footer-section social-links">
-          <h2>Social Links</h2>
-          <a href="#" target="_blank">
-              <img src="https://i.ibb.co/VjTR47y/vector-smart-object-6.png" alt="Facebook">
-              <span>FACEBOOK</span>
-          </a>
-          <a href="#" target="_blank">
-              <img src="https://i.ibb.co/gFfrQgR/vector-smart-object-7.png" alt="Twitter ">
-              <span>TWITTER</span>
-          </a>
-          <a href="#" target="_blank">
-              <img src="https://i.ibb.co/gFfrQgR/vector-smart-object-7.png" alt="linkdlin">
-              <span>LINKEDIN</span>
-          </a>
-      </div>
-  
-      <div class="footer-section contact-info">
+
+      <div class="footer-part">
+        <div class="footer-section contact-info">
           <h2>Contact Information</h2>
           <p>No. 881,6th Cross,Karamangala</p>
           <p>Club Road, 6th Block</p>
           <p>Karamangala,Bangalore</p>
           <p>Karnatka-560095</p>
+        </div>
       </div>
-  </footer>
+      <div class="copyright-section">
+        <p>copyright@2022</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
